@@ -14,8 +14,8 @@ var express = require('express'),
 
 var deskMgr = new DeskMgr();
 var cardMgr = new CardMgr();
-
-server.listen(8088, function() {
+express.set('port', (process.env.PORT || 5000));
+server.listen(express.get('port'), function() {
 	console.log('斗地主服务开启，端口8081');
 });
 
