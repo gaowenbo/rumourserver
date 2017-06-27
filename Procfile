@@ -1,1 +1,1 @@
-web: node src/server.js
+web: sh target/bin/webapp
